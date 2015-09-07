@@ -1,0 +1,21 @@
+<phpunit backupGlobals="true"
+         backupStaticAttributes="false"
+         bootstrap="Tests/bootstrap.php"
+         cacheTokens="false"
+         colors="true"
+         strict="false"
+         verbose="false">
+
+  <filter>
+
+    <blacklist>
+      <directory suffix=".php">./vendor</directory>
+    </blacklist>
+  </filter>
+
+  <testsuites>
+    <testsuite name="SlimModel Test Suite">
+      <directory>tests/</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

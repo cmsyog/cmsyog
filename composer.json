@@ -1,0 +1,22 @@
+{
+  "name": "cmsyog/CMSyog",
+  "description": "A Simple PHP Framework based on Composer",
+  "keywords": ["cms", "simple", "framework", "yog"],
+  "license": "MIT",
+  "require": {
+    "php": ">=5.4.0",
+    "filp/whoops": "*",
+    "nette/mail": "*",
+    "predis/predis": "*",
+    "rossriley/slimmodel": "1.0.*@dev"
+  },
+  "autoload": {
+    "classmap": [
+      "Services",
+      "Model"
+    ]
+  },
+  "config": {
+    "preferred-install": "dist"
+  }
+}
