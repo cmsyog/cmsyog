@@ -1,6 +1,6 @@
 <?php
-require_once('../Core/Controller/ControllerFactory.php');
-require_once('../Core/View/ViewFactory.php');
+require_once('Core/Controller/ControllerFactory.php');
+require_once('Core/View/ViewFactory.php');
 
 class YogApplication
 {
