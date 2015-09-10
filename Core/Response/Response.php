@@ -75,7 +75,7 @@ class Response implements YogResponse
     }
     public function Send()
     {
-//        header_remove();
+        header_remove();
         $body    = $this->getBodyToSend();
         $headers = $this->getHeadersToSend($body);
         foreach ($headers as $header) {
