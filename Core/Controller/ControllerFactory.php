@@ -4,12 +4,12 @@
 class ControllerFactory
 {
 
-   static function getController($module)
+   static function getController($module,$view)
     {
 
         require_once('YogController.php');
         $controller = new YogController();
-        $controller->setup($module);
+        $controller->setup($module,$view);
         return $controller;
     }
 

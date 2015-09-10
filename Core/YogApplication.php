@@ -7,6 +7,7 @@ class YogApplication
     var $controller = null;
     var $headerDisplayed = false;
     var $default_module = 'Home';
+    var $default_view= 'main';
     var $default_action = 'sidecar';
     protected $whiteListActions = array(
         'index',
@@ -23,11 +24,16 @@ class YogApplication
     function execute()
     {
         $module = $this->default_module;
+        $view = $this->default_view;
         if (!empty($_REQUEST['module'])) {
             $module = $_REQUEST['module'];
         }
+        if (!empty($_REQUEST['view'])) {
+            $view = $_REQUEST['view'];
+        }
         insert_charset_header();
-        $this->controller = ControllerFactory::getController($module);
+        $this->controller = ControllerFactory::getController($module,$view);
+
         $this->controller->execute();
 
     }

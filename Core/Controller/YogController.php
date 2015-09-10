@@ -111,13 +111,18 @@ class YogController
         'listview' => 'ListView'
     );
 
-    public function setup($module = '')
+    public function setup($module = '', $view = '')
     {
         if (empty($module) && !empty($_REQUEST['module']))
             $module = $_REQUEST['module'];
+
+        if (empty($view) && !empty($_REQUEST['view']))
+            $view = $_REQUEST['view'];
         //set the module
         if (!empty($module))
             $this->setModule($module);
+        if (!empty($view))
+            $this->setView($view);
 
 
     }
@@ -130,6 +135,11 @@ class YogController
     public function setModule($module)
     {
         $this->module = $module;
+    }
+
+    public function setView($view)
+    {
+        $this->view = $view;
     }
 
     final public function execute()
@@ -185,7 +195,6 @@ class YogController
 
     protected function redirect()
     {
-
         if (!empty($this->redirect_url))
             YogApplication::redirect($this->redirect_url);
     }
