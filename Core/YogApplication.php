@@ -7,7 +7,7 @@ class YogApplication
     var $controller = null;
     var $headerDisplayed = false;
     var $default_module = 'Home';
-    var $default_view= 'main';
+    var $default_view= 'detail';
     var $default_action = 'sidecar';
     protected $whiteListActions = array(
         'index',

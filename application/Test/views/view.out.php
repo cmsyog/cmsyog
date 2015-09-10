@@ -12,6 +12,7 @@ class TestViewOut extends YogView
     //http://www.yog.com/index.php?module=test&view=out&type=test
     function display()
     {
+        echo 11;
         require_once('Core\Response\Response.php');
         $Response = new Response();
         $Response->setSerializer(new SerializerJSON());

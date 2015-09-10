@@ -14,10 +14,12 @@ date_default_timezone_set($config['time_zone']);
 
 // Autoload
 require BASE_PATH.'/vendor/autoload.php';
+define('BASEPATH', BASE_PATH.'/');
 set_include_path(
-    BASE_PATH . PATH_SEPARATOR .
+    BASEPATH. PATH_SEPARATOR .
     get_include_path()
 );
+
 
 // whoops: php errors for cool kids
 $whoops = new \Whoops\Run;

@@ -203,7 +203,7 @@ class YogController
     {
         $view = ViewFactory::loadView($this->view, $this->module, $this->bean, $this->view_object_map, $this->target_module);
 
-        $view->display();
+        $view->process();
     }
 
 }

@@ -7,6 +7,7 @@ class ViewFactory
     function loadView($type = 'detail', $module, $bean = null, $view_object_map = array(), $target_module = '')
     {
         $type = strtolower($type);
+        $module = ucwords($module);
         $view = null;
         if (file_exists(BASEPATH.'application/' . $module . '/views/view.' . $type . '.php')) {
             $view = ViewFactory::_buildFromFile(BASEPATH.'application/' . $module . '/views/view.' . $type . '.php', $bean, $view_object_map, $type, $module);
