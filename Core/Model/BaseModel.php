@@ -10,7 +10,7 @@ class BaseModel extends Base
     public function __construct()
     {
 
-        $db = DriverManager::getConnection(require '/config/database.php');
+        $db = DriverManager::getConnection(require 'config/database.php');
         parent::__construct($db);
     }
 
