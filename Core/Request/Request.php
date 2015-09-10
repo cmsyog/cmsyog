@@ -1,5 +1,6 @@
 <?php
 require_once('Core\Request\YogRequest.php');
+require_once('Core\Request\Connection.php');
 class Request implements YogRequest
 {
     private $method;
