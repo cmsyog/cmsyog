@@ -1,5 +1,5 @@
 <?php
-
+require_once('Core/Cookie/Cookie.php');
 class Cookie implements YogCookie
 {
     private $name, $value;

@@ -1,7 +1,7 @@
 <?php
-require_once('Core\Response\YogResponse.php');
-require_once('Core\Serializer\SerializerJSON.php');
-require_once('Core\Serializer\SerializerXML.php');
+require_once('Core/Response/YogResponse.php');
+require_once('Core/Serializer/SerializerJSON.php');
+require_once('Core/Serializer/SerializerXML.php');
 class Response implements YogResponse
 {
     private $status_code;

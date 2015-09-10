@@ -1,5 +1,5 @@
 <?php
-require_once('Core\Serializer\YogSerializer.php');
+require_once('Core/Serializer/YogSerializer.php');
 class SerializerXML implements YogSerializer
 {
     private $xml_root_tag = 'response';

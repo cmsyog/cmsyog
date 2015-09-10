@@ -1,5 +1,5 @@
 <?php
-require_once('Core\Serializer\YogSerializer.php');
+require_once('Core/Serializer/YogSerializer.php');
 class SerializerJSON  implements YogSerializer
 {
     private $content_type = 'application/json;charset=utf-8';
