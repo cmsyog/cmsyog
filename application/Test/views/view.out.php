@@ -9,7 +9,7 @@ class TestViewOut extends YogView
         $this->dir = __DIR__;
     }
 
-    //http://www.yog.com/index.php?module=test&view=out&type=test
+    //index.php?module=test&view=out&type=test
     function display()
     {
 

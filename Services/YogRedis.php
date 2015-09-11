@@ -5,7 +5,7 @@ use Predis\Client;
 /**
 * \Redis
 */
-class Redis {
+class YogRedis {
   const CONFIG_FILE = '/config/redis.php';
   protected static $redis;
 

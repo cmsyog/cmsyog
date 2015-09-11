@@ -3,6 +3,7 @@
 
 class TestViewDetail extends YogView {
 
+    ///index.php?module=test&view=detail&type=test
     function display() {
 
 

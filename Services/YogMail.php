@@ -5,7 +5,7 @@ use Nette\Mail\Message;
 /**
 * \Mail
 */
-class Mail extends Message {
+class YogMail extends Message {
   public $config;
 
   // [String] e-mail
@@ -45,7 +45,7 @@ class Mail extends Message {
     if ( !$to ) {
       throw new InvalidArgumentException("Mail receiving address can not be empty!");
     }
-    return new Mail($to);
+    return new YogMail($to);
   }
 
   public function title($title=null)
