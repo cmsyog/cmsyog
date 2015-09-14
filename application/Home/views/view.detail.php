@@ -14,20 +14,17 @@ class HomeViewDetail extends YogView
 //        $tpl = new YogTemplate();
 //        $tpl->hello = "I'm very Tiny!";
 //        echo $tpl->render($this->dir, "main.tpl");
-        require_once('Core/Session/RedisSession.php');
-        RedisSession::init(array(
-            'session_name' => 'redis_session',
-            'cookie_path' => '/',
-            'cookie_domain' => '.yog.com',
-            'lifetime' => 3600,
-            'server' => array(
-                'host' => '127.0.0.1',
-                'port' => 6379)));
 
 
-        $_SESSION['z'] = 'zhang';
-        echo $_SESSION['z'] ;
 
+        $_SESSION['aaa'] = "aaaaaaaa";
+        $_SESSION['bbb'] = "bbbbbbbb";
+        $_SESSION['ccc'] = "cccccccc";
+        echo  $_SESSION['ccc'];
+        var_dump($_SESSION);
+        $_SESSION['ccc'] = "ddddd";
+
+//
         $redis=new YogRedis();
         $redis::init();
         $redis::set('z','jian');

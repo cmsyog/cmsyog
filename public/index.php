@@ -4,10 +4,9 @@
 define('PUBLIC_PATH', __DIR__);
 
 // bootstrap
-require PUBLIC_PATH.'/../bootstrap.php';
+require PUBLIC_PATH . '/../bootstrap.php';
 
 $startTime = microtime(true);
-
 
 
 //
@@ -16,6 +15,5 @@ require_once('Core/functions.php');
 require_once('Core/Model/BaseModel.php');
 require_once('Core/Template/YogTemplate.php');
 $app = new YogApplication();
-
-//$app->startSession();
+$app->startSession();
 $app->execute();
